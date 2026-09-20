@@ -1,0 +1,39 @@
+
+ADJACENCY MATRIX
+
+  A B C D E F 
+A  0 1 1 0 0 0
+B  1 0 0 1 1 0
+C  1 0 0 0 0 1
+D  0 1 0 0 0 0
+E  0 1 0 0 0 1
+F  0 0 1 0 1 0
+
+ADJACENCY LIST
+
+A -> B -> C -> NULL
+B -> A -> D -> E -> NULL
+C -> A -> F -> NULL
+D -> B -> NULL
+E -> B -> F -> NULL
+F -> C -> E -> NULL
+
+BFS (Adjacency Matrix): A B C D E F 
+Neighbor checks = 36
+
+DFS (Adjacency Matrix): A B D E F C 
+Neighbor checks = 36
+
+BFS (Adjacency List): A B C D E F 
+Neighbor checks = 12
+
+DFS (Adjacency List): A B D E F C 
+Neighbor checks = 12
+
+SEARCH FOR VERTEX E FROM A (BFS-BASED SEARCH)
+Matrix: E found after 11 neighbor checks
+List:   E found after 5 neighbor checks
+
+EDGE CHECK: E-F
+Matrix: Edge exists (1 check)
+List:   Edge exists (2 checks)

@@ -1,0 +1,5 @@
+Vertices: A B C D E F
+Connections: A-B, A-C, B-D, B-E, C-F, E-F
+Starting vertex for BFS and DFS: A
+Target vertex for search: E
+Edge selected for edge-check comparison: E-F
